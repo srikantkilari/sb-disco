@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PARENT_DIR=$(dirname $(dirname $(realpath $0)) )
+python3 $PARENT_DIR/databricks/db-submit.py "$@"
